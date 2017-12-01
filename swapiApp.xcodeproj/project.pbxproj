@@ -13,9 +13,11 @@
 		0A75CA591FD2045900EC61E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A75CA571FD2045900EC61E1 /* Main.storyboard */; };
 		0A75CA5B1FD2045900EC61E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A75CA5A1FD2045900EC61E1 /* Assets.xcassets */; };
 		0A75CA5E1FD2045900EC61E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A75CA5C1FD2045900EC61E1 /* LaunchScreen.storyboard */; };
+		F1FF5472BCDB10997A13830E /* Pods_swapiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034CB922403A39F2D4352536 /* Pods_swapiApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		034CB922403A39F2D4352536 /* Pods_swapiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swapiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A75CA4E1FD2045900EC61E1 /* swapiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swapiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A75CA511FD2045900EC61E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A75CA531FD2045900EC61E1 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		0A75CA5A1FD2045900EC61E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A75CA5D1FD2045900EC61E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A75CA5F1FD2045900EC61E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5429E483FCC2D1434D8D82B /* Pods-swapiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swapiApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-swapiApp/Pods-swapiApp.release.xcconfig"; sourceTree = "<group>"; };
+		DC9FD54B7193CA100E7DE703 /* Pods-swapiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swapiApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swapiApp/Pods-swapiApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1FF5472BCDB10997A13830E /* Pods_swapiApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0A75CA501FD2045900EC61E1 /* swapiApp */,
 				0A75CA4F1FD2045900EC61E1 /* Products */,
+				9C722C1198B8652002A9A751 /* Pods */,
+				578BB7152F2CE10A002E50FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = swapiApp;
 			sourceTree = "<group>";
 		};
+		578BB7152F2CE10A002E50FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				034CB922403A39F2D4352536 /* Pods_swapiApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C722C1198B8652002A9A751 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC9FD54B7193CA100E7DE703 /* Pods-swapiApp.debug.xcconfig */,
+				B5429E483FCC2D1434D8D82B /* Pods-swapiApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A75CA621FD2045900EC61E1 /* Build configuration list for PBXNativeTarget "swapiApp" */;
 			buildPhases = (
+				AB7B3EEF372D878C581900BE /* [CP] Check Pods Manifest.lock */,
 				0A75CA4A1FD2045900EC61E1 /* Sources */,
 				0A75CA4B1FD2045900EC61E1 /* Frameworks */,
 				0A75CA4C1FD2045900EC61E1 /* Resources */,
+				C4D7C85CEE9FF77BCCA5F9A3 /* [CP] Embed Pods Frameworks */,
+				80CCF9929DEA132C7ABEE59C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80CCF9929DEA132C7ABEE59C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swapiApp/Pods-swapiApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB7B3EEF372D878C581900BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swapiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D7C85CEE9FF77BCCA5F9A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-swapiApp/Pods-swapiApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swapiApp/Pods-swapiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A75CA4A1FD2045900EC61E1 /* Sources */ = {
@@ -276,11 +359,13 @@
 		};
 		0A75CA631FD2045900EC61E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9FD54B7193CA100E7DE703 /* Pods-swapiApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = swapiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.comp4977.swapiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,11 +376,13 @@
 		};
 		0A75CA641FD2045900EC61E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5429E483FCC2D1434D8D82B /* Pods-swapiApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = swapiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.comp4977.swapiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
