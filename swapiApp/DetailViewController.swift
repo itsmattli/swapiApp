@@ -28,7 +28,7 @@ class DetailViewController: UIViewController {
     var step: Double = 0
     
     @objc func update() {
-        let progress = step / 100
+        let progress = step / 50
         
         // Get the number of characters
         let characters = openingCrawl.text.count
